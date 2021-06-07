@@ -12,8 +12,8 @@ services:
     ports:
     - "27017:27017"  # Only needed for debugging
   discord-bot:
-    build: .
-    command: python main.py
+    build: Dockerfile
+    command: python tm_main.py
     volumes:
     - .:/code
     ports:

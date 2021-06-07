@@ -1,13 +1,18 @@
 # Good day, ST
 
 ### What a typical day looks like in bot commands ??
-```!TM-StartGame```
-This starts the game.
+```!TM-Start```
 
-BOT Actions-
-* [ ] Locks in players and gives nicknames.
-* [ ] 
+```!TM-Day 4m```
 
-```!TM-```
+```!TM-Public 4m```
+
+```!TM-Dead @Player1 @Player2 @Player3```
+
+```!TM-Alive @Player1 @Player2 @Player3```
+
+```!TM-Travel @Player1 @Player2 @Player3```
+
+```!TM-End```
 
 ### All BOT commands

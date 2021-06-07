@@ -26,8 +26,6 @@
 
 ### Stuff to ask bra1n
 * [ ] Inform of sending characters to spectators(BOT) with empty role.
-* [ ] 
-* [ ] 
 
 ### Commands:
 ```
