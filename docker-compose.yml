@@ -1,0 +1,25 @@
+version: "3.3"
+
+services:
+  db:
+    image: mongo
+    restart: always
+    volumes:
+    - vipo-mongo-db1:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "vipo-taskmaster"
+      MONGO_INITDB_ROOT_PASSWORD: "stay-away-hacker!123"
+    ports:
+    - "27017:27017"  # Only needed for debugging
+  discord-bot:
+    build: .
+    command: python main.py
+    volumes:
+    - .:/code
+    ports:
+    - "443:443"
+    depends_on:
+      - db
+
+volumes:
+  vipo-mongo-db1: {}

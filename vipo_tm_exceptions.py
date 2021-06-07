@@ -1,0 +1,2 @@
+class TimeParseError(Exception):
+    pass
